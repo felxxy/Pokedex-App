@@ -9,7 +9,7 @@ const width = Dimensions.get("window").width;
 export default function PokemonDetail() {
     const pokemon = useLocalSearchParams();
     const tipos = 
-    typeof pokemon.Tipo === "String" ? JSON.parse(pokemon.Tipo) : pokemon.Tipo;
+    typeof pokemon.Tipo === "string" ? JSON.parse(pokemon.Tipo) : pokemon.Tipo;
 
     return (
         <View style={styles.container}>

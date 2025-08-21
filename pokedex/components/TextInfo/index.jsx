@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function TextInfo({ label, text }) {
     return (
-        <Text style={StyleSheet.text}>
+        <Text style={styles.text}>
             <Text style={styles.bold}>{label}:</Text> {text}
         </Text>
     );
@@ -11,7 +11,7 @@ export default function TextInfo({ label, text }) {
 const styles = StyleSheet.create({
     text: {
         color: '#fff',
-        fontSize: 18,
+        fontSize: 14,
         textAlign: 'justify',
         marginBottom: 10
     },
